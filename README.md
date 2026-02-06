@@ -23,7 +23,7 @@ Since v3 is heavy on AD, I paused my general prep to complete the **Active Direc
 * Kerberoasting & AS-REP Roasting
 * Domain Privilege Escalation
 
-### 3. Simulated Engagements
+### 3. The "Gym": Simulated Engagements
 I targeted specific labs that mirrored the exam's complexity (multi-step pivoting, AD chains, and web-to-shell exploitation).
 
 | Platform | Lab/Machine | OS | Focus Area |
@@ -44,12 +44,13 @@ I targeted specific labs that mirrored the exam's complexity (multi-step pivotin
 
 A carpenter is only as good as his tools. These were the drivers of my exam success:
 
-| Category | Tool | Why I Used It |
-| :--- | :--- | :--- |
-| **Pivoting** | **MSF SOCKS & SSH** | I avoided external binaries. I used Metasploit's built-in SOCKS proxy for general routing and standard SSH tunneling for targeting specific internal ports. |
-| **AD Enum** | **BloodHound** | Essential for visualizing attack paths and finding hidden relationships in the domain. |
-| **Exploitation** | **Impacket Suite** | Specifically `GetUserSPNs.py`, `psexec.py`, and `wmiexec.py`. |
-| **C2 / Shells** | **Metasploit** | My primary C2. Used for listener management (`multi/handler`) and managing the `autoroute` functionality. |
+| Category | Tools Used |
+| :--- | :--- |
+| **Web Enumeration** | **WPScan**, **OWASP ZAP**, **Gobuster**. I used these to map out the attack surface and identify vulnerable plugins on CMS targets. |
+| **AD & Network Enum** | **BloodHound.py**, **Ldapsearch**, **Enum4linux**, **CrackMapExec**. For Kerberos attacks, I relied on **GetUserSPNs.py** and **GetNPUsers.py**. |
+| **Lateral Movement** | **Evil-WinRM**, **WMIexec**, **PsExec**, **SMBClient**, **RDPClient**. These were critical for moving between machines once credentials were compromised. |
+| **Exploitation & Shells** | **Netcat (nc)**, **Web_Delivery** (Metasploit), **Mshta**. I used living-off-the-land binaries (LOLBins) like mshta for initial access. |
+| **PrivEsc & Cracking** | **PowerUp**, **KeePass2John**, **Hashcat**, **John the Ripper**, **Hydra**. |
 
 ---
 
@@ -59,7 +60,7 @@ A carpenter is only as good as his tools. These were the drivers of my exam succ
 The v3 environment is massive. It simulates a realistic enterprise forest, not just a single domain.
 * **Complex AD Topology:** Dealing with a **Parent-Child Domain** architecture meant I had to understand trust relationships and enterprise admin privileges, not just local domain admin.
 * **Web-Heavy Entry:** The initial footholds relied heavily on Web Application Penetration Testing, specifically targeting **WordPress** servers and custom CMS misconfigurations.
-* **Service Exploitation:**  I had to exploit specific vulnerable services and hunt for sensitive files left on targets to move laterally.
+* **Service Exploitation:** I had to exploit specific vulnerable services and hunt for sensitive files left on targets to move laterally.
 
 ---
 
@@ -69,11 +70,12 @@ The eCPPTv3 is as much a reporting exam as it is a hacking exam. I spent a full 
 * **Executive Summary:** I wrote this for a non-technical stakeholder, focusing on business risk rather than technical jargon.
 * **Technical Walkthrough:** A complete reproduction guide with screenshots for every step.
 
+
 ---
 
 ## 💡 3 Tips for Future Candidates
 
-1.  **Deep-Dive Active Directory:** Don't just learn the basics. You must dive intp Directory Enumeration (LDAP, SMB) and modern attacks like Kerberoasting/AS-REP Roasting. Understanding the Parent-Child trust relationship is critical.
+1.  **Deep-Dive Active Directory:** Don't just learn the basics. You must master Directory Enumeration (LDAP, SMB) and modern attacks like Kerberoasting/AS-REP Roasting. Understanding the Parent-Child trust relationship is critical.
 2.  **Web App Enumeration is Key:** A huge part of the initial access relies on web apps. Focus heavily on WordPress enumeration and identifying vulnerable plugins—standard scans might miss custom vectors.
 3.  **Post-Exploitation is Where You Win:** Getting a shell is just step one. You need to be thorough in local file enumeration to find credentials in config files. Extracting hashes and performing privilege escalation (Local to System to Domain Admin) is the core loop of this exam.
 
