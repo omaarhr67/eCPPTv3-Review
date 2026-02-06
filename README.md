@@ -54,6 +54,7 @@ A carpenter is only as good as his tools. These were the drivers of my exam succ
 ## 💀 The Exam Experience
 
 **The Environment**
+
 You have **24 hours** to compromise a realistic enterprise forest.
 * **Network Scale:** The lab consists of **4 Windows hosts and 1 Linux host**.
 * **Web-Heavy Entry:** The initial footholds relied heavily on Web Application Penetration Testing, specifically targeting **WordPress** servers and custom CMS misconfigurations.
