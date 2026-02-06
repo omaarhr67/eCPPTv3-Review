@@ -46,7 +46,7 @@ A carpenter is only as good as his tools. These were the drivers of my exam succ
 | **Web Enumeration** | **WPScan**, **OWASP ZAP**, **Burpsuite**, **Gobuster**. I used these to map out the attack surface and identify vulnerable plugins on CMS targets. |
 | **AD & Network Enum** | **BloodHound.py**, **Ldapsearch**, **Enum4linux**, **CrackMapExec**. For Kerberos attacks, I relied on **GetUserSPNs.py** and **GetNPUsers.py**. |
 | **Lateral Movement** | **Evil-WinRM**, **WMIexec**, **PsExec**, **SMBClient**, **xfreerdp**. These were critical for moving between machines once credentials were compromised. |
-| **Exploitation & Shells** | **Netcat (nc)**, **Web_Delivery** (Metasploit), **mshta**(Metasploi). I used living-off-the-land binaries (LOLBins) like mshta for initial access. |
+| **Exploitation & Shells** | **Netcat (nc)**, **Web_Delivery** (Metasploit), **mshta** (Metasploit). I used living-off-the-land binaries (LOLBins) like mshta for initial access. |
 | **PrivEsc & Cracking** | **PowerUp**, **KeePass2John**, **Hashcat**, **John the Ripper**, **Hydra**. |
 
 ---
@@ -54,7 +54,8 @@ A carpenter is only as good as his tools. These were the drivers of my exam succ
 ## 💀 The Exam Experience
 
 **The Environment**
-The v3 environment is massive. It simulates a realistic enterprise forest, not just a single domain.
+The v3 environment simulates a realistic enterprise forest, not just a single domain.
+* **Network Scale:** The lab consists of **4 Windows hosts and 1 Linux host**, creating a mixed-OS environment that requires versatility in both Powershell/AD attacks and Linux manual exploitation.
 * **Complex AD Topology:** Dealing with a **Parent-Child Domain** architecture meant I had to understand trust relationships and enterprise admin privileges, not just local domain admin.
 * **Web-Heavy Entry:** The initial footholds relied heavily on Web Application Penetration Testing, specifically targeting **WordPress** servers and custom CMS misconfigurations.
 * **Service Exploitation:** I had to exploit specific vulnerable services and hunt for sensitive files left on targets to move laterally.
