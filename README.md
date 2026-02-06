@@ -54,12 +54,11 @@ A carpenter is only as good as his tools. These were the drivers of my exam succ
 ## 💀 The Exam Experience
 
 **The Environment**
-
-The v3 environment simulates a realistic enterprise forest, not just a single domain.
-* **Network Scale:** The lab consists of **4 Windows hosts and 1 Linux host**, creating a mixed-OS environment that requires versatility in both Powershell/AD attacks and Linux manual exploitation.
-* **Complex AD Topology:** Dealing with a **Parent-Child Domain** architecture meant I had to understand trust relationships and enterprise admin privileges, not just local domain admin.
+You have **24 hours** to compromise a realistic enterprise forest.
+* **Network Scale:** The lab consists of **4 Windows hosts and 1 Linux host**.
 * **Web-Heavy Entry:** The initial footholds relied heavily on Web Application Penetration Testing, specifically targeting **WordPress** servers and custom CMS misconfigurations.
-* **Service Exploitation:** I had to exploit specific vulnerable services and hunt for sensitive files left on targets to move laterally.
+* **Privilege Escalation:** The focus wasn't just on pivoting, but on **vertical escalation**. I had to exploit specific services and dig through local files to find the credentials needed to move to the next target.
+* **Complex AD Topology:** Dealing with a **Parent-Child Domain** meant understanding trust relationships and enterprise admin privileges was mandatory. I had to exploit specific vulnerable services and hunt for sensitive files left on targets to move laterally.
 
 ---
 
