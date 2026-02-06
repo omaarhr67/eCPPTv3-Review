@@ -33,9 +33,6 @@ I targeted specific labs that mirrored the exam's complexity (multi-step pivotin
 | **TryHackMe** | **VulnNet: Roasted** | Windows | Active Directory (Kerberoasting) |
 | **TryHackMe** | **VulnNet: Active** | Windows | Full AD Chain (GPO & Lateral Movement) |
 | **HackTheBox** | **Overwatch** | Windows | Service Exploitation & AD |
-| **HackTheBox** | **Eloquia** | Windows | Web to System (Django/DLL Injection) |
-| **HackTheBox** | **Browsed** | Linux | Service Misconfiguration (CUPS/Printing) |
-| **HackTheBox** | **AirTouch** | Linux | Wireless/API Exploitation |
 | **HackTheBox** | **Conversor** | Linux | Web & File Processing Exploits |
 
 ---
