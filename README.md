@@ -23,7 +23,7 @@ Since v3 is heavy on AD, I paused my general prep to complete the **Active Direc
 * Kerberoasting & AS-REP Roasting
 * Domain Privilege Escalation
 
-### 3. The "Gym": Simulated Engagements
+### 3. Simulated Engagements
 I targeted specific labs that mirrored the exam's complexity (multi-step pivoting, AD chains, and web-to-shell exploitation).
 
 | Platform | Lab/Machine | OS | Focus Area |
