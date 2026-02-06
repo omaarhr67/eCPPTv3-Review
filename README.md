@@ -54,6 +54,7 @@ A carpenter is only as good as his tools. These were the drivers of my exam succ
 ## 💀 The Exam Experience
 
 **The Environment**
+
 The v3 environment simulates a realistic enterprise forest, not just a single domain.
 * **Network Scale:** The lab consists of **4 Windows hosts and 1 Linux host**, creating a mixed-OS environment that requires versatility in both Powershell/AD attacks and Linux manual exploitation.
 * **Complex AD Topology:** Dealing with a **Parent-Child Domain** architecture meant I had to understand trust relationships and enterprise admin privileges, not just local domain admin.
