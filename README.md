@@ -60,7 +60,6 @@ The v3 environment is massive. It simulates a realistic enterprise forest, not j
 * **Service Exploitation:** I had to exploit specific vulnerable services and hunt for sensitive files left on targets to move laterally.
 
 ---
----
 
 ## 💡 3 Tips for Future Candidates
 
