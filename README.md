@@ -43,7 +43,7 @@ A carpenter is only as good as his tools. These were the drivers of my exam succ
 
 | Category | Tools Used |
 | :--- | :--- |
-| **Web Enumeration** | **WPScan**, **OWASP ZAP**, **Gobuster**. I used these to map out the attack surface and identify vulnerable plugins on CMS targets. |
+| **Web Enumeration** | **WPScan**, **OWASP ZAP**, **Burpsuite**, **Gobuster**. I used these to map out the attack surface and identify vulnerable plugins on CMS targets. |
 | **AD & Network Enum** | **BloodHound.py**, **Ldapsearch**, **Enum4linux**, **CrackMapExec**. For Kerberos attacks, I relied on **GetUserSPNs.py** and **GetNPUsers.py**. |
 | **Lateral Movement** | **Evil-WinRM**, **WMIexec**, **PsExec**, **SMBClient**, **RDPClient**. These were critical for moving between machines once credentials were compromised. |
 | **Exploitation & Shells** | **Netcat (nc)**, **Web_Delivery** (Metasploit), **Mshta**. I used living-off-the-land binaries (LOLBins) like mshta for initial access. |
