@@ -60,14 +60,6 @@ The v3 environment is massive. It simulates a realistic enterprise forest, not j
 * **Service Exploitation:** I had to exploit specific vulnerable services and hunt for sensitive files left on targets to move laterally.
 
 ---
-
-## 📝 The Reporting
-
-The eCPPTv3 is as much a reporting exam as it is a hacking exam. I spent a full 3 days documenting my findings.
-* **Executive Summary:** I wrote this for a non-technical stakeholder, focusing on business risk rather than technical jargon.
-* **Technical Walkthrough:** A complete reproduction guide with screenshots for every step.
-
-
 ---
 
 ## 💡 3 Tips for Future Candidates
