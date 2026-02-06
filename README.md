@@ -45,8 +45,8 @@ A carpenter is only as good as his tools. These were the drivers of my exam succ
 | :--- | :--- |
 | **Web Enumeration** | **WPScan**, **OWASP ZAP**, **Burpsuite**, **Gobuster**. I used these to map out the attack surface and identify vulnerable plugins on CMS targets. |
 | **AD & Network Enum** | **BloodHound.py**, **Ldapsearch**, **Enum4linux**, **CrackMapExec**. For Kerberos attacks, I relied on **GetUserSPNs.py** and **GetNPUsers.py**. |
-| **Lateral Movement** | **Evil-WinRM**, **WMIexec**, **PsExec**, **SMBClient**, **RDPClient**. These were critical for moving between machines once credentials were compromised. |
-| **Exploitation & Shells** | **Netcat (nc)**, **Web_Delivery** (Metasploit), **Mshta**. I used living-off-the-land binaries (LOLBins) like mshta for initial access. |
+| **Lateral Movement** | **Evil-WinRM**, **WMIexec**, **PsExec**, **SMBClient**, **xfreerdp**. These were critical for moving between machines once credentials were compromised. |
+| **Exploitation & Shells** | **Netcat (nc)**, **Web_Delivery** (Metasploit), **mshta**(Metasploi). I used living-off-the-land binaries (LOLBins) like mshta for initial access. |
 | **PrivEsc & Cracking** | **PowerUp**, **KeePass2John**, **Hashcat**, **John the Ripper**, **Hydra**. |
 
 ---
@@ -68,4 +68,4 @@ The v3 environment is massive. It simulates a realistic enterprise forest, not j
 3.  **Post-Exploitation is Where You Win:** Getting a shell is just step one. You need to be thorough in local file enumeration to find credentials in config files. Extracting hashes and performing privilege escalation (Local to System to Domain Admin) is the core loop of this exam.
 
 ---
-*Connect with me on [LinkedIn](https://www.linkedin.com/in/omar-haouari-b81628236/)*
+*Connect with me on [LinkedIn](https://www.linkedin.com/in/omar-haouari-4bbb3128b/)*
