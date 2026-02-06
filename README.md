@@ -8,7 +8,7 @@
 
 ## 🎯 Introduction
 
-After earning the **eJPTv2**, I wanted to tackle a certification that accurately simulates a real-world corporate engagement. I chose the **eCPPTv3** because it is a 100% practical, black-box exam that requires deep network pivoting and professional-grade reporting, rather than just capturing flags.
+After earning the **eJPTv2**, I wanted to tackle a certification that accurately simulates a real-world corporate engagement. I chose the **eCPPTv3** because it is a 100% practical, black-box exam that requires advanced Active Directory exploitation and realistic web attacks, rather than just capturing flags.
 
 ## 📚 The Preparation Path
 
